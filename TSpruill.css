@@ -1,33 +1,27 @@
 #pink{
-    background-color: lightpink;
+    background-color: pink
 }
 
-
-
-
-
-@-webkit-keyframes fadeOut {
+@-webkit-keyframes thumbnail {
   0%   { opacity: 0; }
   100% { opacity: 1; }
 }
-@-moz-keyframes fadeOut {
+@-moz-keyframes thumbnail {
   0%   { opacity: 0; }
   100% { opacity: 1; }
 }
-@-o-keyframes fadeOut{
+@-o-keyframes thumbnail{
   0%   { opacity: 0; }
   100% { opacity: 1; }
 }
-
-@keyframes fade{
-    0% {opacity: 0}
-    100% {opacity: 1}
+@keyframes thumbnail{
+  0%   { opacity: 0; }
+  100% { opacity: 1; }
 }
 
 #thumb{
-   /* display: none;*/
-    animation: fade 8s;
-    -webkit-animation:fadeOut 8s;
-    -moz-animation:fadeOut 8s;
-    -o-animation:fadeOut 8s;
+  -webkit-animation: thumbnail 5s; /* Safari 4+ */
+  -moz-animation:    thumbnail 5s; /* Fx 5+ */
+  -o-animation:      thumbnail 5s; /* Opera 12+ */
+  animation:         thumbnail 5s; /* IE 10+, Fx 29+ */
 }
